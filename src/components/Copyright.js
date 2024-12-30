@@ -8,8 +8,8 @@ export default function Copyright() {
       color: "text.secondary"
     }}>
       {'Copyright © '}
-      <MuiLink color="inherit" href="https://mui.com/">
-        Your Website
+      <MuiLink color="inherit" href="https://juangh.ing/">
+        Juan Miguel Gonzalez Hernandez
       </MuiLink>{' '}
       {new Date().getFullYear()}.</Typography>)
   );

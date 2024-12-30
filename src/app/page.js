@@ -6,6 +6,9 @@ import Link from '@mui/material/Link';
 import NextLink from 'next/link';
 import ProTip from '@/components/ProTip';
 import Copyright from '@/components/Copyright';
+import BookList from '@/components/Book/BookList';
+import CreateBook from '@/components/Book/CreateBook';
+import BookModal from '@/components/Book/BookModal';
 
 export default function Home() {
   return (
@@ -20,12 +23,14 @@ export default function Home() {
         }}
       >
         <Typography variant="h4" component="h1" sx={{ mb: 2 }}>
-          Material UI - Next.js App Router example in JavaScript
+          Material UI - Next.js App Router test jmgh in JavaScript
         </Typography>
         <Link href="/about" color="secondary" component={NextLink}>
           Go to the about page
         </Link>
-        <ProTip />
+        <BookModal />
+        <BookList />
+        <CreateBook />
         <Copyright />
       </Box>
     </Container>
